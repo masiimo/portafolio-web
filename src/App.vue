@@ -35,19 +35,19 @@ const isHome = computed(() => route.path === '/')
     : 'flex-col md:flex-row'"
     >
 
-    <Button as-child class="w-full">
+    <Button  v-if="!isHome" as-child class="w-full border-2 bg-white text-black hover:bg-gray-100 font-mono font-bold">
       <RouterLink to="/">
         Inicio
       </RouterLink>
     </Button>
 
-    <Button as-child class="w-full">
+    <Button as-child class="w-full border-2 bg-white text-black hover:bg-gray-100 font-mono font-bold">
       <RouterLink to="/proyectos">
         Proyectos
       </RouterLink>
     </Button>
 
-    <Button as-child class="w-full">
+    <Button as-child class="w-full border-2 bg-white text-black hover:bg-gray-100 font-mono font-bold">
       <RouterLink to="/sobre-mi">
         Sobre mí
       </RouterLink>
