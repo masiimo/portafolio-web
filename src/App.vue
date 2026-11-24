@@ -18,11 +18,11 @@ const isHome = computed(() => route.path === '/')
       class="text-center px-4 mb-8"
     >
 
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 font-mono">
         Bienvenido a mi Portfolio
       </h1>
 
-      <p class="text-lg md:text-xl">
+      <p class="text-lg md:text-xl font-mono">
         Artista visual, ilustrador y creación de personaje.
       </p>
 
