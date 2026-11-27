@@ -9,7 +9,7 @@ const isHome = computed(() => route.path === '/')
 
 <template>
   <div
-    class="min-h-screen flex flex-col"
+    class="min-h-screen flex flex-col bg-pink-50"
     :class="isHome ? 'justify-center' : 'justify-start'"
   >
 
@@ -17,6 +17,9 @@ const isHome = computed(() => route.path === '/')
       v-if="isHome"
       class="text-center px-4 mb-8"
     >
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 font-mono">
+        ⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹
+      </h1>
 
       <h1 class="text-4xl md:text-6xl font-bold mb-4 font-mono">
         Bienvenido a mi Portfolio
@@ -24,6 +27,9 @@ const isHome = computed(() => route.path === '/')
 
       <p class="text-lg md:text-xl font-mono">
         Artista visual, ilustrador y creación de personaje.
+      </p>
+      <p class="text-lg md:text-xl font-mono">
+        ❤︎
       </p>
 
     </section>
@@ -37,19 +43,19 @@ const isHome = computed(() => route.path === '/')
 
     <Button  v-if="!isHome" as-child class="w-full border-2 bg-white text-black hover:bg-gray-100 font-mono font-bold">
       <RouterLink to="/">
-        Inicio
+        𖹭 Inicio 𖹭
       </RouterLink>
     </Button>
 
     <Button as-child class="w-full border-2 bg-white text-black hover:bg-gray-100 font-mono font-bold">
       <RouterLink to="/proyectos">
-        Proyectos
+        𖹭 Proyectos 𖹭
       </RouterLink>
     </Button>
 
     <Button as-child class="w-full border-2 bg-white text-black hover:bg-gray-100 font-mono font-bold">
       <RouterLink to="/sobre-mi">
-        Sobre mí
+        𖹭 Sobre mí 𖹭
       </RouterLink>
     </Button>
     </nav>

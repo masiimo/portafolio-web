@@ -9,9 +9,9 @@ import { Instagram } from 'lucide-vue-next'
     <a href="https://www.instagram.com/de3rdoll/"
     class="inline-flex items-center gap-2">
 
-    <Instagram :size="20" />
+    𖹭 <Instagram :size="20" /> 
     <span>@de3rdoll</span>
-
+    𖹭
     </a>
   </Button>
   </div>
