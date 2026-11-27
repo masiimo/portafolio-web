@@ -9,7 +9,7 @@ const route = useRoute()
 const isDetail = computed(() => route.params.id !== undefined)
 
 
-const selectedCategory = ref('Todos')
+const selectedCategory = ref('𖹭 Todos 𖹭')
 
 const categories = [
   '𖹭 Todos 𖹭',
@@ -18,7 +18,7 @@ const categories = [
 ]
 
 const filteredProjects = computed(() => {
-  if (selectedCategory.value === 'Todos') {
+  if (selectedCategory.value === '𖹭 Todos 𖹭') {
     return projects
   }
 

@@ -14,13 +14,13 @@ const project = computed(() => {
 </script>
 
 <template>
-  <section class="w-full px-6 py-12">
+  <section class="w-full px-6 py-12 bg-white">
 
     <!-- Botón para volver -->
     <RouterLink
       to="/proyectos"
       class="inline-flex items-center gap-2 mb-10
-             hover:opacity-60 transition"
+             hover:opacity-60 transition font-mono"
     >
       ← Volver a proyectos
     </RouterLink>
@@ -30,11 +30,11 @@ const project = computed(() => {
 
       <!-- Cabecera -->
       <header class="mb-10">
-        <h1 class="text-4xl md:text-5xl font-bold mb-3">
+        <h1 class="text-4xl md:text-5xl font-bold mb-3 font-mono">
           {{ project.title }}
         </h1>
 
-        <p class="text-gray-500">
+        <p class="text-gray-500 font-mono">
           {{ project.category }} · {{ project.year }}
         </p>
       </header>
@@ -57,26 +57,26 @@ const project = computed(() => {
 
     <!-- Descripción -->
     <div>
-      <h2 class="text-2xl lg:text-3xl font-semibold mb-4">
+      <h2 class="text-2xl lg:text-3xl font-semibold mb-4 font-mono">
         Sobre el proyecto
       </h2>
 
-      <p class="text-base lg:text-lg leading-relaxed text-gray-600">
+      <p class="text-base lg:text-lg leading-relaxed text-gray-600 font-mono">
         {{ project.description }}
       </p>
     </div>
 
     <!-- Técnicas y herramientas -->
     <div>
-      <h2 class="text-2xl lg:text-3xl font-semibold mb-4">
+      <h2 class="text-2xl lg:text-3xl font-semibold mb-4 font-mono">
         Técnicas y herramientas
       </h2>
 
-      <div class="flex flex-wrap gap-3">
+      <div class="flex flex-wrap gap-3 font-mono">
         <span
           v-for="tool in project.tools"
           :key="tool"
-          class="border border-gray-300 rounded-full px-5 py-2.5 text-base"
+          class="border border-gray-300 bg-pink-50 rounded-full px-5 py-2.5 text-base"
         >
           {{ tool }}
         </span>

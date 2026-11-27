@@ -3,12 +3,12 @@
 </script>
 
 <template>
-  <section class="w-full px-6 py-12 lg:px-16">
+  <section class="w-full px-6 py-12 lg:px-16 bg-white">
 
     <!-- Título -->
     <header class="mb-12">
       <h1 class="text-4xl md:text-5xl font-bold font-mono">
-        Sobre mí @de3rdoll
+        Sobre mí @de3rdoll (╥﹏╥)
       </h1>
     </header>
 
@@ -24,11 +24,15 @@
         />
       </div>
         <!-- Texto -->
-      <div class="w-full md:w-2/3">
+      <div class="w-full md:w-2/3 font-mono">
 
         <h2 class="text-2xl lg:text-3xl font-semibold mb-6">
           Hola, soy Maxi, como nombre artístico deerdoll.
         </h2>
+        <p class="text-base lg:text-lg leading-relaxed mb-5">
+          . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.
+        </p>
+
         <p class="text-base lg:text-lg leading-relaxed mb-5">
           Soy artista visual y creador de personajes, con interés extra en la exploración
           de diferentes disciplinas artísticas y audiovisuales.
