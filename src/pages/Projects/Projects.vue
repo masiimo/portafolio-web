@@ -12,7 +12,7 @@ const isDetail = computed(() => route.params.id !== undefined)
 const selectedCategory = ref('Todos')
 
 const categories = [
-  'Todos',
+  '𖹭 Todos 𖹭',
   'Ilustración',
   'Diseño personaje'
 ]
@@ -29,7 +29,7 @@ const filteredProjects = computed(() => {
 </script>
 
 <template>
-  <section v-if="!isDetail" class="w-full px-6 py-12">
+  <section v-if="!isDetail" class="w-full px-6 py-12 bg-white">
 
     <header class="mb-10">
       <h1 class="text-4xl font-bold mb-3 font-mono">
@@ -65,16 +65,16 @@ const filteredProjects = computed(() => {
         class="px-4 py-2 border rounded-full text-sm font-mono"
         :class="selectedCategory === category
           ? 'bg-black text-white'
-          : 'hover:bg-gray-100'"
+          : 'hover:bg-white'"
       >
         {{ category }}
       </button>
     </nav>
 
     <div class="grid grid-cols-1 sm:grid-cols-2
-                lg:grid-cols-3 gap-8 ">
+                lg:grid-cols-3 gap-8">
 
-      <ProjectCard
+      <ProjectCard class="bg-amber-50 border text-gray-600 font-mono"
         v-for="project in filteredProjects"
         :key="project.id"
         :project="project"
