@@ -79,8 +79,9 @@ const filteredProjects = computed(() => {
         :key="project.id"
         :project="project"
       />
-    <RouterView />
+
     </div>
 
   </section>
+<RouterView />
 </template>
