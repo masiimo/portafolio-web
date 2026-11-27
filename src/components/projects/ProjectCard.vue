@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Project } from '@/data/projects'
+import { RouterLink } from 'vue-router'
 
 defineProps<{
   project: Project
@@ -7,7 +8,10 @@ defineProps<{
 </script>
 
 <template>
-  <article class="group cursor-pointer">
+    <RouterLink
+    :to="`/proyectos/${project.id}`"
+    class="group block cursor-pointer"
+    >
     <img
       :src="project.image"
       :alt="project.title"
@@ -24,6 +28,7 @@ defineProps<{
       <p class="text-sm text-gray-500">
         {{ project.category }} · {{ project.year }}
       </p>
+    
     </div>
-  </article>
+    </RouterLink>
 </template>

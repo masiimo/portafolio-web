@@ -2,6 +2,12 @@
 import { ref, computed } from 'vue'
 import { projects } from '@/data/projects'
 import ProjectCard from '@/components/projects/ProjectCard.vue'
+import { RouterView, useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const isDetail = computed(() => route.params.id !== undefined)
+
 
 const selectedCategory = ref('Todos')
 
@@ -23,7 +29,7 @@ const filteredProjects = computed(() => {
 </script>
 
 <template>
-  <section class="w-full px-6 py-12">
+  <section v-if="!isDetail" class="w-full px-6 py-12">
 
     <header class="mb-10">
       <h1 class="text-4xl font-bold mb-3 font-mono">
@@ -73,7 +79,7 @@ const filteredProjects = computed(() => {
         :key="project.id"
         :project="project"
       />
-
+    <RouterView />
     </div>
 
   </section>
